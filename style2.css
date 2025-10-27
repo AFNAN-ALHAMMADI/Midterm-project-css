@@ -26,7 +26,20 @@ header {
     order: 1;
 }
 
-.logo img {
+.logo-link {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.logo-link img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
